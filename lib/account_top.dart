@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import 'XDiPhoneXXS11Pro2.dart';
+import 'transfer_detail.dart';
 
-class XDiPhoneXXS11Pro1 extends StatelessWidget {
-  XDiPhoneXXS11Pro1({Key key}) : super(key: key);
+class AccountTop extends StatelessWidget {
+  AccountTop({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -172,30 +172,30 @@ class XDiPhoneXXS11Pro1 extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                       ),
-                      Pinned.fromPins(
-                        Pin(size: 239.7, middle: 0.5019),
-                        Pin(size: 40.0, middle: 0.5121),
-                        child: Stack(
-                          children: <Widget>[
-                            Pinned.fromPins(
-                              Pin(start: 0.0, end: 0.0),
-                              Pin(start: 0.0, end: 0.0),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(5.0),
-                                  color: const Color(0xff7764e4),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: const Color(0x1c2c2828),
-                                      offset: Offset(0, 3),
-                                      blurRadius: 6,
-                                    ),
-                                  ],
+                      GestureDetector(
+                        child: Pinned.fromPins(
+                          Pin(size: 239.7, middle: 0.5019),
+                          Pin(size: 40.0, middle: 0.5121),
+                          child: Stack(
+                            children: <Widget>[
+                              Pinned.fromPins(
+                                Pin(start: 0.0, end: 0.0),
+                                Pin(start: 0.0, end: 0.0),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(5.0),
+                                    color: const Color(0xff7764e4),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: const Color(0x1c2c2828),
+                                        offset: Offset(0, 3),
+                                        blurRadius: 6,
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
-                            ),
-                            GestureDetector(
-                              child: Pinned.fromPins(
+                              Pinned.fromPins(
                                 Pin(size: 90.0, middle: 0.5),
                                 Pin(size: 15.0, middle: 0.5),
                                 child: Text(
@@ -212,17 +212,16 @@ class XDiPhoneXXS11Pro1 extends StatelessWidget {
                                   textAlign: TextAlign.left,
                                 ),
                               ),
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) =>
-                                          XDiPhoneXXS11Pro2()),
-                                );
-                              },
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => TransferDetail()),
+                          );
+                        },
                       ),
                       Pinned.fromPins(
                         Pin(start: 11.8, end: 11.8),

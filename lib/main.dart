@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:payment/register_payment.dart';
+import 'package:payment/login.dart';
 
-import 'XDiPhoneXXS11Pro1.dart';
+import 'payment_list.dart';
+import 'loan_detail.dart';
+import 'loan_list.dart';
+import 'account_top.dart';
 
 void main() {
   runApp(MyApp());
@@ -114,9 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(
-              builder: (context) => XDiPhoneXXS11Pro1()
-            ),
+            MaterialPageRoute(builder: (context) => AccountTop()),
           );
         },
         tooltip: 'Increment',

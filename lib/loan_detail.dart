@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class XDiPhoneXXS11Pro3 extends StatelessWidget {
-  XDiPhoneXXS11Pro3({
-    Key key,
-  }) : super(key: key);
+class LoanDetail extends StatelessWidget {
+  LoanDetail({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -192,23 +191,6 @@ class XDiPhoneXXS11Pro3 extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(size: 119.0, start: 31.6),
-            Pin(size: 17.0, start: 24.9),
-            child: Text(
-              'マリの借金帳簿',
-              style: TextStyle(
-                fontFamily: 'Source Han Sans JP',
-                fontSize: 17,
-                color: const Color(0xffffffff),
-                fontWeight: FontWeight.w700,
-                height: 1.1764705882352942,
-              ),
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: false),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Pinned.fromPins(
             Pin(size: 34.0, start: 48.1),
             Pin(size: 17.0, start: 126.3),
             child: Text(
@@ -226,209 +208,225 @@ class XDiPhoneXXS11Pro3 extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(start: 13.5, end: 13.5),
-            Pin(size: 110.6, middle: 0.2831),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20.0),
-                color: const Color(0xffffffff),
-                boxShadow: [
-                  BoxShadow(
-                    color: const Color(0x1c2c2828),
-                    offset: Offset(0, 3),
-                    blurRadius: 6,
+            Pin(start: 12.5, end: 12.5),
+            Pin(size: 1.0, middle: 0.2495),
+            child: SvgPicture.string(
+              _svg_o76mbg,
+              allowDrawingOutsideViewBox: true,
+              fit: BoxFit.fill,
+            ),
+          ),
+          Pinned.fromPins(
+            Pin(size: 246.7, middle: 0.4698),
+            Pin(size: 14.0, middle: 0.2786),
+            child: Stack(
+              children: <Widget>[
+                Pinned.fromPins(
+                  Pin(size: 52.0, start: 0.0),
+                  Pin(start: 0.0, end: 0.0),
+                  child: Text(
+                    '5/11(Fri)',
+                    style: TextStyle(
+                      fontFamily: 'Gotham',
+                      fontSize: 14,
+                      color: const Color(0xffffffff),
+                      fontWeight: FontWeight.w500,
+                      height: 1.4285714285714286,
+                    ),
+                    textHeightBehavior:
+                        TextHeightBehavior(applyHeightToFirstAscent: false),
+                    textAlign: TextAlign.left,
                   ),
-                ],
-              ),
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 125.0, start: 31.6),
-            Pin(size: 17.0, middle: 0.274),
-            child: Text(
-              '蓮根 引っ越し代',
-              style: TextStyle(
-                fontFamily: 'Source Han Sans JP',
-                fontSize: 17,
-                color: const Color(0xff172b4d),
-                fontWeight: FontWeight.w700,
-                height: 1.1764705882352942,
-              ),
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: false),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 108.0, middle: 0.7715),
-            Pin(size: 30.0, middle: 0.3259),
-            child: Text(
-              '¥49,899',
-              style: TextStyle(
-                fontFamily: 'Gotham',
-                fontSize: 30,
-                color: const Color(0xff172b4d),
-                fontWeight: FontWeight.w500,
-                height: 0.6666666666666666,
-              ),
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: false),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 34.0, start: 48.1),
-            Pin(size: 17.0, middle: 0.3287),
-            child: Text(
-              '残高',
-              style: TextStyle(
-                fontFamily: 'Gotham',
-                fontSize: 17,
-                color: const Color(0xff172b4d),
-                fontWeight: FontWeight.w500,
-                height: 1.1764705882352942,
-              ),
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: false),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(start: 13.5, end: 13.5),
-            Pin(size: 110.6, middle: 0.4755),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20.0),
-                color: const Color(0xffffffff),
-                boxShadow: [
-                  BoxShadow(
-                    color: const Color(0x1c2c2828),
-                    offset: Offset(0, 3),
-                    blurRadius: 6,
+                ),
+                Pinned.fromPins(
+                  Pin(size: 43.0, end: 0.0),
+                  Pin(start: 0.0, end: 0.0),
+                  child: Text(
+                    '¥4,980',
+                    style: TextStyle(
+                      fontFamily: 'Gotham',
+                      fontSize: 14,
+                      color: const Color(0xffffffff),
+                      fontWeight: FontWeight.w500,
+                      height: 1.4285714285714286,
+                    ),
+                    textHeightBehavior:
+                        TextHeightBehavior(applyHeightToFirstAscent: false),
+                    textAlign: TextAlign.left,
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
           Pinned.fromPins(
-            Pin(size: 125.0, start: 31.6),
-            Pin(size: 17.0, middle: 0.4438),
-            child: Text(
-              '志茂 引っ越し代',
-              style: TextStyle(
-                fontFamily: 'Source Han Sans JP',
-                fontSize: 17,
-                color: const Color(0xff172b4d),
-                fontWeight: FontWeight.w700,
-                height: 1.1764705882352942,
-              ),
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: false),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 108.0, middle: 0.7715),
-            Pin(size: 30.0, middle: 0.4985),
-            child: Text(
-              '¥49,899',
-              style: TextStyle(
-                fontFamily: 'Gotham',
-                fontSize: 30,
-                color: const Color(0xff172b4d),
-                fontWeight: FontWeight.w500,
-                height: 0.6666666666666666,
-              ),
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: false),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 34.0, start: 48.1),
-            Pin(size: 17.0, middle: 0.4985),
-            child: Text(
-              '残高',
-              style: TextStyle(
-                fontFamily: 'Gotham',
-                fontSize: 17,
-                color: const Color(0xff172b4d),
-                fontWeight: FontWeight.w500,
-                height: 1.1764705882352942,
-              ),
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: false),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(start: 13.5, end: 13.5),
-            Pin(size: 110.6, middle: 0.668),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20.0),
-                color: const Color(0xffffffff),
-                boxShadow: [
-                  BoxShadow(
-                    color: const Color(0x1c2c2828),
-                    offset: Offset(0, 3),
-                    blurRadius: 6,
+            Pin(size: 246.7, middle: 0.4698),
+            Pin(size: 14.0, middle: 0.3212),
+            child: Stack(
+              children: <Widget>[
+                Pinned.fromPins(
+                  Pin(size: 52.0, start: 0.0),
+                  Pin(start: 0.0, end: 0.0),
+                  child: Text(
+                    '5/11(Fri)',
+                    style: TextStyle(
+                      fontFamily: 'Gotham',
+                      fontSize: 14,
+                      color: const Color(0xffffffff),
+                      fontWeight: FontWeight.w500,
+                      height: 1.4285714285714286,
+                    ),
+                    textHeightBehavior:
+                        TextHeightBehavior(applyHeightToFirstAscent: false),
+                    textAlign: TextAlign.left,
                   ),
-                ],
-              ),
+                ),
+                Pinned.fromPins(
+                  Pin(size: 43.0, end: 0.0),
+                  Pin(start: 0.0, end: 0.0),
+                  child: Text(
+                    '¥4,980',
+                    style: TextStyle(
+                      fontFamily: 'Gotham',
+                      fontSize: 14,
+                      color: const Color(0xffffffff),
+                      fontWeight: FontWeight.w500,
+                      height: 1.4285714285714286,
+                    ),
+                    textHeightBehavior:
+                        TextHeightBehavior(applyHeightToFirstAscent: false),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+              ],
             ),
           ),
           Pinned.fromPins(
-            Pin(size: 106.0, start: 31.6),
-            Pin(size: 17.0, middle: 0.6161),
-            child: Text(
-              'Macbook pro',
-              style: TextStyle(
-                fontFamily: 'Source Han Sans JP',
-                fontSize: 17,
-                color: const Color(0xff172b4d),
-                fontWeight: FontWeight.w700,
-                height: 1.1764705882352942,
-              ),
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: false),
-              textAlign: TextAlign.left,
+            Pin(size: 246.7, middle: 0.4698),
+            Pin(size: 14.0, middle: 0.3638),
+            child: Stack(
+              children: <Widget>[
+                Pinned.fromPins(
+                  Pin(size: 52.0, start: 0.0),
+                  Pin(start: 0.0, end: 0.0),
+                  child: Text(
+                    '5/11(Fri)',
+                    style: TextStyle(
+                      fontFamily: 'Gotham',
+                      fontSize: 14,
+                      color: const Color(0xffffffff),
+                      fontWeight: FontWeight.w500,
+                      height: 1.4285714285714286,
+                    ),
+                    textHeightBehavior:
+                        TextHeightBehavior(applyHeightToFirstAscent: false),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+                Pinned.fromPins(
+                  Pin(size: 43.0, end: 0.0),
+                  Pin(start: 0.0, end: 0.0),
+                  child: Text(
+                    '¥4,980',
+                    style: TextStyle(
+                      fontFamily: 'Gotham',
+                      fontSize: 14,
+                      color: const Color(0xffffffff),
+                      fontWeight: FontWeight.w500,
+                      height: 1.4285714285714286,
+                    ),
+                    textHeightBehavior:
+                        TextHeightBehavior(applyHeightToFirstAscent: false),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+              ],
             ),
           ),
           Pinned.fromPins(
-            Pin(size: 108.0, middle: 0.7715),
-            Pin(size: 30.0, middle: 0.6711),
-            child: Text(
-              '¥49,899',
-              style: TextStyle(
-                fontFamily: 'Gotham',
-                fontSize: 30,
-                color: const Color(0xff172b4d),
-                fontWeight: FontWeight.w500,
-                height: 0.6666666666666666,
-              ),
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: false),
-              textAlign: TextAlign.left,
+            Pin(size: 246.7, middle: 0.4698),
+            Pin(size: 14.0, middle: 0.4064),
+            child: Stack(
+              children: <Widget>[
+                Pinned.fromPins(
+                  Pin(size: 52.0, start: 0.0),
+                  Pin(start: 0.0, end: 0.0),
+                  child: Text(
+                    '5/11(Fri)',
+                    style: TextStyle(
+                      fontFamily: 'Gotham',
+                      fontSize: 14,
+                      color: const Color(0xffffffff),
+                      fontWeight: FontWeight.w500,
+                      height: 1.4285714285714286,
+                    ),
+                    textHeightBehavior:
+                        TextHeightBehavior(applyHeightToFirstAscent: false),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+                Pinned.fromPins(
+                  Pin(size: 43.0, end: 0.0),
+                  Pin(start: 0.0, end: 0.0),
+                  child: Text(
+                    '¥4,980',
+                    style: TextStyle(
+                      fontFamily: 'Gotham',
+                      fontSize: 14,
+                      color: const Color(0xffffffff),
+                      fontWeight: FontWeight.w500,
+                      height: 1.4285714285714286,
+                    ),
+                    textHeightBehavior:
+                        TextHeightBehavior(applyHeightToFirstAscent: false),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+              ],
             ),
           ),
           Pinned.fromPins(
-            Pin(size: 34.0, start: 48.1),
-            Pin(size: 17.0, middle: 0.6684),
-            child: Text(
-              '残高',
-              style: TextStyle(
-                fontFamily: 'Gotham',
-                fontSize: 17,
-                color: const Color(0xff172b4d),
-                fontWeight: FontWeight.w500,
-                height: 1.1764705882352942,
-              ),
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: false),
-              textAlign: TextAlign.left,
+            Pin(size: 246.7, middle: 0.4698),
+            Pin(size: 14.0, middle: 0.449),
+            child: Stack(
+              children: <Widget>[
+                Pinned.fromPins(
+                  Pin(size: 52.0, start: 0.0),
+                  Pin(start: 0.0, end: 0.0),
+                  child: Text(
+                    '5/11(Fri)',
+                    style: TextStyle(
+                      fontFamily: 'Gotham',
+                      fontSize: 14,
+                      color: const Color(0xffffffff),
+                      fontWeight: FontWeight.w500,
+                      height: 1.4285714285714286,
+                    ),
+                    textHeightBehavior:
+                        TextHeightBehavior(applyHeightToFirstAscent: false),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+                Pinned.fromPins(
+                  Pin(size: 43.0, end: 0.0),
+                  Pin(start: 0.0, end: 0.0),
+                  child: Text(
+                    '¥4,980',
+                    style: TextStyle(
+                      fontFamily: 'Gotham',
+                      fontSize: 14,
+                      color: const Color(0xffffffff),
+                      fontWeight: FontWeight.w500,
+                      height: 1.4285714285714286,
+                    ),
+                    textHeightBehavior:
+                        TextHeightBehavior(applyHeightToFirstAscent: false),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+              ],
             ),
           ),
+          Container(),
         ],
       ),
     );
@@ -441,3 +439,5 @@ const String _svg_2dzs12 =
     '<svg viewBox="75.8 -172.7 18.9 25.7" ><path transform="translate(-388.57, -296.79)" d="M 481.2923583984375 149.5203857421875 L 474.8090209960938 144.3663024902344 C 474.1985473632812 143.8809509277344 473.3147583007812 143.8809509277344 472.7042846679688 144.3663024902344 L 466.220947265625 149.5203857421875 C 465.4437866210938 150.1380920410156 464.3269653320312 149.5576477050781 464.3269653320312 148.5359802246094 L 464.3269653320312 129.4161682128906 C 464.3269653320312 126.4701538085938 466.6079711914062 124.0820007324219 469.421630859375 124.0820007324219 L 478.0916748046875 124.0820007324219 C 480.9053955078125 124.0820007324219 483.1863403320312 126.4701538085938 483.1863403320312 129.4161682128906 L 483.1863403320312 148.5359802246094 C 483.1863403320312 149.5576477050781 482.069580078125 150.1380920410156 481.2923583984375 149.5203857421875 Z" fill="none" stroke="#6e7faa" stroke-width="5.5" stroke-miterlimit="10" stroke-linecap="butt" /></svg>';
 const String _svg_3cilo4 =
     '<svg viewBox="0.0 0.0 27.1 27.1" ><path transform="translate(-849.46, -128.08)" d="M 876.561767578125 147.0918884277344 C 876.561767578125 148.5849914550781 875.1583251953125 149.7972106933594 873.4296875 149.7972106933594 L 852.5914916992188 149.7972106933594 C 850.8615112304688 149.7972106933594 849.4591064453125 148.5867919921875 849.4591064453125 147.0918884277344 C 849.4591064453125 145.5991516113281 850.8602905273438 144.3861694335938 852.58740234375 144.3861694335938 C 852.5852661132812 144.3861694335938 852.5861206054688 137.099853515625 852.5861206054688 137.099853515625 C 852.5861206054688 132.1180725097656 857.2527465820312 128.0820007324219 863.0104370117188 128.0820007324219 C 868.7684936523438 128.0820007324219 873.4345092773438 132.119140625 873.4345092773438 137.099853515625 L 873.4345092773438 144.3854675292969 C 875.1580200195312 144.3861694335938 876.561767578125 145.5984497070312 876.561767578125 147.0918884277344 Z M 873.4332885742188 146.1900939941406 C 872.2816772460938 146.1900939941406 871.349853515625 145.3843383789062 871.349853515625 144.3854675292969 L 871.349853515625 137.099853515625 C 871.349853515625 133.1151428222656 867.6167602539062 129.8855895996094 863.0104370117188 129.8855895996094 C 858.4039916992188 129.8855895996094 854.6713256835938 133.1140747070312 854.6713256835938 137.099853515625 L 854.6713256835938 144.3854675292969 C 854.6713256835938 145.3814697265625 853.7369995117188 146.1900939941406 852.58740234375 146.1900939941406 C 852.011962890625 146.1900939941406 851.5438232421875 146.5951538085938 851.5438232421875 147.0918884277344 C 851.5438232421875 147.5896911621094 852.011962890625 147.99365234375 852.5914916992188 147.99365234375 L 873.4296875 147.99365234375 C 874.0075073242188 147.99365234375 874.47705078125 147.5882873535156 874.47705078125 147.0918884277344 C 874.47705078125 146.5954895019531 874.0075073242188 146.1900939941406 873.4332885742188 146.1900939941406 Z M 858.3195190429688 151.1500854492188 L 860.4042358398438 151.1500854492188 C 860.4042358398438 152.3951416015625 861.5712890625 153.4043579101562 863.0104370117188 153.4043579101562 C 864.4495849609375 153.4043579101562 865.6165771484375 152.3951416015625 865.6165771484375 151.1500854492188 L 867.7012939453125 151.1500854492188 C 867.7012939453125 153.3911743164062 865.601318359375 155.2079162597656 863.0104370117188 155.2079162597656 C 860.4198608398438 155.2079162597656 858.3195190429688 153.3911743164062 858.3195190429688 151.1500854492188 Z" fill="#6e7faa" stroke="#6e7faa" stroke-width="0.5" stroke-miterlimit="10" stroke-linecap="butt" /></svg>';
+const String _svg_o76mbg =
+    '<svg viewBox="12.5 202.3 350.0 1.0" ><path transform="translate(12.5, 202.34)" d="M 0 0 L 350 0" fill="none" fill-opacity="0.6" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.6" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';

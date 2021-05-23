@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class XDiPhoneXXS11Pro5 extends StatelessWidget {
-  XDiPhoneXXS11Pro5({
-    Key key,
-  }) : super(key: key);
+class PaymentList extends StatelessWidget {
+  PaymentList({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

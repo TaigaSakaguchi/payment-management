@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:payment/register_payment.dart';
-import 'package:payment/login.dart';
+import 'package:payment/presentation/register_payment/register_payment_page.dart';
+import 'package:payment/presentation/login/login_page.dart';
 
-import 'payment_list.dart';
-import 'loan_detail.dart';
-import 'loan_list.dart';
-import 'account_top.dart';
+import 'presentation/payment_list/payment_list_page.dart';
+import 'presentation/loan_detail/loan_detail_page.dart';
+import 'presentation/loan_list/loan_list_page.dart';
+import 'presentation/account_top/account_top_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -119,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => AccountTop()),
+            MaterialPageRoute(builder: (context) => AccountTopPage()),
           );
         },
         tooltip: 'Increment',

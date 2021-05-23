@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class RegisterPayment extends StatelessWidget {
-  RegisterPayment({Key key}) : super(key: key);
+class RegisterPaymentPage extends StatelessWidget {
+  RegisterPaymentPage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

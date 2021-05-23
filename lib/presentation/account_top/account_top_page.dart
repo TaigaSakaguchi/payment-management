@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import 'transfer_detail.dart';
+import '../transfer_detail/transfer_detail_page.dart';
 
-class AccountTop extends StatelessWidget {
-  AccountTop({Key key}) : super(key: key);
+class AccountTopPage extends StatelessWidget {
+  AccountTopPage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -219,7 +219,7 @@ class AccountTop extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => TransferDetail()),
+                                builder: (context) => TransferDetailPage()),
                           );
                         },
                       ),

@@ -175,8 +175,12 @@ class RegisterPaymentForm extends State<RegisterPaymentPage> {
                               child: Column(
                                 children: [
                                   Container(
-                                    width: 200,
+                                    width: 230,
+                                    height: 40,
                                     child: CupertinoButton(
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(5.0)),
+                                      padding: EdgeInsets.all(0),
                                       color: const Color(0xff7764e4),
                                       child: Text(
                                         '登録する',

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
-import '../transfer_detail/transfer_detail_page.dart';
+import 'package:payment/presentation/register_payment/register_payment_page.dart';
 
 class AccountTopPage extends StatelessWidget {
   AccountTopPage({Key key}) : super(key: key);
@@ -219,7 +218,8 @@ class AccountTopPage extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => TransferDetailPage()),
+                                builder: (context) => RegisterPaymentPage(),
+                                fullscreenDialog: true),
                           );
                         },
                       ),

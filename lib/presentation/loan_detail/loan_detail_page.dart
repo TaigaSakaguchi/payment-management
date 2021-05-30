@@ -9,6 +9,7 @@ class LoanDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xffa99bf7),
+      appBar: AppBar(),
       body: Stack(
         children: <Widget>[
           Pinned.fromPins(

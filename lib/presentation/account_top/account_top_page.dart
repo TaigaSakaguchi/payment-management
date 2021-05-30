@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:payment/presentation/register_payment/register_payment_page.dart';
+import 'package:tatekae/presentation/register_payment/register_payment_page.dart';
 
 class AccountTopPage extends StatelessWidget {
   AccountTopPage({Key key}) : super(key: key);
@@ -29,21 +29,17 @@ class AccountTopPage extends StatelessWidget {
                   ),
                 ],
               ),
-              // child: Container(
-              //   // color: Colors.yellow,
-              //   child: Text('aaaa'),
-              // ),
             ),
           ),
           Positioned(
               top: 40,
               right: 10,
-              child: GestureDetector(
+              child: TextButton(
                 child: Text(
                   'ログアウト',
                   style: TextStyle(color: Colors.red),
                 ),
-                onTap: () {
+                onPressed: () {
                   // TODO: ログアウト処理
                 },
               )),
@@ -63,7 +59,6 @@ class AccountTopPage extends StatelessWidget {
                       fontSize: 25,
                       color: const Color(0xff172b4d),
                       fontWeight: FontWeight.w500,
-                      // height: 0.8,
                     ),
                   )
                 ],
@@ -152,8 +147,9 @@ class AccountTopPage extends StatelessWidget {
           Positioned(
               top: 510,
               child: Container(
+                // color: Colors.red,
                 width: 350,
-                height: 300,
+                height: 280,
                 child: Scrollbar(
                   child: ListView(
                     padding: const EdgeInsets.all(0),

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:payment/presentation/register_payment/register_payment_model.dart';
+import 'package:tatekae/presentation/register_payment/register_payment_model.dart';
 import 'package:provider/provider.dart';
 
 class RegisterPaymentPage extends StatefulWidget {

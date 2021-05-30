@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:payment/domain/payment.dart';
+import 'package:tatekae/domain/payment.dart';
 
 class RegisterPaymentModel extends ChangeNotifier {
   Payment payment;

@@ -33,7 +33,7 @@ class LoanListPage extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         builder: (context) => LoanDetailPage(),
-                        fullscreenDialog: true),
+                        fullscreenDialog: false),
                   );
                 },
                 child: Container(
@@ -111,221 +111,254 @@ class LoanListPage extends StatelessWidget {
                 ),
               ),
               const Padding(padding: EdgeInsets.only(bottom: 20)),
-              Container(
-                width: 360,
-                height: 120,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20.0),
-                  color: const Color(0xffffffff),
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color(0x1c2c2828),
-                      offset: Offset(0, 3),
-                      blurRadius: 6,
-                    ),
-                  ],
-                ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => LoanDetailPage(),
+                        fullscreenDialog: false),
+                  );
+                },
                 child: Container(
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(15.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              '蓮根 引越し費用',
-                              style: TextStyle(
-                                fontFamily: 'NotoSansJP-Medium',
-                                fontSize: 17,
-                                color: const Color(0xff172b4d),
-                                fontWeight: FontWeight.w700,
-                              ),
-                            ),
-                            const Padding(padding: EdgeInsets.only(bottom: 20)),
-                            Container(
-                              width: 320,
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    width: 60,
-                                    child: Text(
-                                      '残高',
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                        fontFamily: 'NotoSansJP-Medium',
-                                        letterSpacing: 1.0,
-                                        color: const Color(0xff172b4d),
-                                      ),
-                                    ),
-                                  ),
-                                  Container(
-                                    width: 250,
-                                    child: Text(
-                                      '¥129,899',
-                                      style: TextStyle(
-                                        fontFamily: 'NotoSansJP-Medium',
-                                        fontSize: 30,
-                                        color: const Color(0xff172b4d),
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                      textAlign: TextAlign.right,
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
+                  width: 360,
+                  height: 120,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: const Color(0xffffffff),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0x1c2c2828),
+                        offset: Offset(0, 3),
+                        blurRadius: 6,
                       ),
                     ],
+                  ),
+                  child: Container(
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(15.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                '蓮根 引越し費用',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                  fontSize: 17,
+                                  color: const Color(0xff172b4d),
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                              const Padding(
+                                  padding: EdgeInsets.only(bottom: 20)),
+                              Container(
+                                width: 320,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      width: 60,
+                                      child: Text(
+                                        '残高',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          fontFamily: 'NotoSansJP-Medium',
+                                          letterSpacing: 1.0,
+                                          color: const Color(0xff172b4d),
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      width: 250,
+                                      child: Text(
+                                        '¥129,899',
+                                        style: TextStyle(
+                                          fontFamily: 'NotoSansJP-Medium',
+                                          fontSize: 30,
+                                          color: const Color(0xff172b4d),
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                        textAlign: TextAlign.right,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
               const Padding(padding: EdgeInsets.only(bottom: 20)),
-              Container(
-                width: 360,
-                height: 120,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20.0),
-                  color: const Color(0xffffffff),
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color(0x1c2c2828),
-                      offset: Offset(0, 3),
-                      blurRadius: 6,
-                    ),
-                  ],
-                ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => LoanDetailPage(),
+                        fullscreenDialog: false),
+                  );
+                },
                 child: Container(
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(15.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              '志茂 引越し費用',
-                              style: TextStyle(
-                                fontFamily: 'NotoSansJP-Medium',
-                                fontSize: 17,
-                                color: const Color(0xff172b4d),
-                                fontWeight: FontWeight.w700,
-                              ),
-                            ),
-                            const Padding(padding: EdgeInsets.only(bottom: 20)),
-                            Container(
-                              width: 320,
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    width: 60,
-                                    child: Text(
-                                      '残高',
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                        fontFamily: 'NotoSansJP-Medium',
-                                        letterSpacing: 1.0,
-                                        color: const Color(0xff172b4d),
-                                      ),
-                                    ),
-                                  ),
-                                  Container(
-                                    width: 250,
-                                    child: Text(
-                                      '¥129,899',
-                                      style: TextStyle(
-                                        fontFamily: 'NotoSansJP-Medium',
-                                        fontSize: 30,
-                                        color: const Color(0xff172b4d),
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                      textAlign: TextAlign.right,
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
+                  width: 360,
+                  height: 120,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: const Color(0xffffffff),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0x1c2c2828),
+                        offset: Offset(0, 3),
+                        blurRadius: 6,
                       ),
                     ],
+                  ),
+                  child: Container(
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(15.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                '志茂 引越し費用',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                  fontSize: 17,
+                                  color: const Color(0xff172b4d),
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                              const Padding(
+                                  padding: EdgeInsets.only(bottom: 20)),
+                              Container(
+                                width: 320,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      width: 60,
+                                      child: Text(
+                                        '残高',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          fontFamily: 'NotoSansJP-Medium',
+                                          letterSpacing: 1.0,
+                                          color: const Color(0xff172b4d),
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      width: 250,
+                                      child: Text(
+                                        '¥129,899',
+                                        style: TextStyle(
+                                          fontFamily: 'NotoSansJP-Medium',
+                                          fontSize: 30,
+                                          color: const Color(0xff172b4d),
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                        textAlign: TextAlign.right,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
               const Padding(padding: EdgeInsets.only(bottom: 20)),
-              Container(
-                width: 360,
-                height: 120,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20.0),
-                  color: const Color(0xffffffff),
-                  boxShadow: [
-                    BoxShadow(
-                      color: const Color(0x1c2c2828),
-                      offset: Offset(0, 3),
-                      blurRadius: 6,
-                    ),
-                  ],
-                ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => LoanDetailPage(),
+                        fullscreenDialog: false),
+                  );
+                },
                 child: Container(
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(15.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'MacBook Pro代',
-                              style: TextStyle(
-                                fontFamily: 'NotoSansJP-Medium',
-                                fontSize: 17,
-                                color: const Color(0xff172b4d),
-                                fontWeight: FontWeight.w700,
-                              ),
-                            ),
-                            const Padding(padding: EdgeInsets.only(bottom: 20)),
-                            Container(
-                              width: 320,
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    width: 60,
-                                    child: Text(
-                                      '残高',
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                        fontFamily: 'NotoSansJP-Medium',
-                                        letterSpacing: 1.0,
-                                        color: const Color(0xff172b4d),
-                                      ),
-                                    ),
-                                  ),
-                                  Container(
-                                    width: 250,
-                                    child: Text(
-                                      '¥129,899',
-                                      style: TextStyle(
-                                        fontFamily: 'NotoSansJP-Medium',
-                                        fontSize: 30,
-                                        color: const Color(0xff172b4d),
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                      textAlign: TextAlign.right,
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
+                  width: 360,
+                  height: 120,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: const Color(0xffffffff),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0x1c2c2828),
+                        offset: Offset(0, 3),
+                        blurRadius: 6,
                       ),
                     ],
+                  ),
+                  child: Container(
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(15.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'MacBook Pro代',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                  fontSize: 17,
+                                  color: const Color(0xff172b4d),
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                              const Padding(
+                                  padding: EdgeInsets.only(bottom: 20)),
+                              Container(
+                                width: 320,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      width: 60,
+                                      child: Text(
+                                        '残高',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          fontFamily: 'NotoSansJP-Medium',
+                                          letterSpacing: 1.0,
+                                          color: const Color(0xff172b4d),
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      width: 250,
+                                      child: Text(
+                                        '¥129,899',
+                                        style: TextStyle(
+                                          fontFamily: 'NotoSansJP-Medium',
+                                          fontSize: 30,
+                                          color: const Color(0xff172b4d),
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                        textAlign: TextAlign.right,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),

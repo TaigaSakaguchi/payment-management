@@ -37,7 +37,10 @@ class AccountTopPage extends StatelessWidget {
               child: TextButton(
                 child: Text(
                   'ログアウト',
-                  style: TextStyle(color: Colors.red),
+                  style: TextStyle(
+                    color: Colors.red,
+                    fontFamily: 'NotoSansJP-Medium',
+                  ),
                 ),
                 onPressed: () {
                   // TODO: ログアウト処理
@@ -82,7 +85,12 @@ class AccountTopPage extends StatelessWidget {
                             TextHeightBehavior(applyHeightToFirstAscent: false),
                         textAlign: TextAlign.left,
                       ),
-                      Text('5月分')
+                      Text(
+                        '5月分',
+                        style: TextStyle(
+                          fontFamily: 'NotoSansJP-Medium',
+                        ),
+                      )
                     ],
                   ),
                   const Padding(padding: EdgeInsets.only(right: 130)),
@@ -112,7 +120,7 @@ class AccountTopPage extends StatelessWidget {
                 child: Text(
                   '立て替え登録',
                   style: TextStyle(
-                    fontFamily: 'Gotham',
+                    fontFamily: 'NotoSansJP-Medium',
                     fontSize: 15,
                     color: const Color(0xffffffff),
                     fontWeight: FontWeight.w300,
@@ -161,17 +169,30 @@ class AccountTopPage extends StatelessWidget {
                               child: Container(
                                   child: Text(
                                 '5/11(Fri)',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
                                 textAlign: TextAlign.end,
                               ))),
                           const Padding(padding: EdgeInsets.only(right: 30)),
                           Expanded(
-                              flex: 2, child: Container(child: Text('食費'))),
+                              flex: 2,
+                              child: Container(
+                                  child: Text(
+                                '食費',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
+                              ))),
                           const Padding(padding: EdgeInsets.only(right: 10)),
                           Expanded(
                               flex: 2,
                               child: Container(
                                   child: Text(
                                 '¥4,980',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
                                 textAlign: TextAlign.end,
                               )))
                         ],
@@ -184,17 +205,30 @@ class AccountTopPage extends StatelessWidget {
                               child: Container(
                                   child: Text(
                                 '5/11(Fri)',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
                                 textAlign: TextAlign.end,
                               ))),
                           const Padding(padding: EdgeInsets.only(right: 30)),
                           Expanded(
-                              flex: 2, child: Container(child: Text('ソルのご飯代'))),
+                              flex: 2,
+                              child: Container(
+                                  child: Text(
+                                'ソルのご飯代',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
+                              ))),
                           const Padding(padding: EdgeInsets.only(right: 10)),
                           Expanded(
                               flex: 2,
                               child: Container(
                                   child: Text(
                                 '¥14,980',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
                                 textAlign: TextAlign.end,
                               )))
                         ],
@@ -206,16 +240,29 @@ class AccountTopPage extends StatelessWidget {
                               flex: 1,
                               child: Container(
                                   child: Text('5/4(Fri)',
+                                      style: TextStyle(
+                                        fontFamily: 'NotoSansJP-Medium',
+                                      ),
                                       textAlign: TextAlign.end))),
                           const Padding(padding: EdgeInsets.only(right: 30)),
                           Expanded(
-                              flex: 2, child: Container(child: Text('洗剤'))),
+                              flex: 2,
+                              child: Container(
+                                  child: Text(
+                                '洗剤',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
+                              ))),
                           const Padding(padding: EdgeInsets.only(right: 10)),
                           Expanded(
                               flex: 2,
                               child: Container(
                                   child: Text(
                                 '¥4,980',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
                                 textAlign: TextAlign.end,
                               )))
                         ],
@@ -227,16 +274,29 @@ class AccountTopPage extends StatelessWidget {
                               flex: 1,
                               child: Container(
                                   child: Text('3/11(Fri)',
+                                      style: TextStyle(
+                                        fontFamily: 'NotoSansJP-Medium',
+                                      ),
                                       textAlign: TextAlign.end))),
                           const Padding(padding: EdgeInsets.only(right: 30)),
                           Expanded(
-                              flex: 2, child: Container(child: Text('食費'))),
+                              flex: 2,
+                              child: Container(
+                                  child: Text(
+                                '食費',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
+                              ))),
                           const Padding(padding: EdgeInsets.only(right: 10)),
                           Expanded(
                               flex: 2,
                               child: Container(
                                   child: Text(
                                 '¥2,980',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
                                 textAlign: TextAlign.end,
                               )))
                         ],
@@ -248,16 +308,29 @@ class AccountTopPage extends StatelessWidget {
                               flex: 1,
                               child: Container(
                                   child: Text('3/11(Fri)',
+                                      style: TextStyle(
+                                        fontFamily: 'NotoSansJP-Medium',
+                                      ),
                                       textAlign: TextAlign.end))),
                           const Padding(padding: EdgeInsets.only(right: 30)),
                           Expanded(
-                              flex: 2, child: Container(child: Text('食費'))),
+                              flex: 2,
+                              child: Container(
+                                  child: Text(
+                                '食費',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
+                              ))),
                           const Padding(padding: EdgeInsets.only(right: 10)),
                           Expanded(
                               flex: 2,
                               child: Container(
                                   child: Text(
                                 '¥2,980',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
                                 textAlign: TextAlign.end,
                               )))
                         ],
@@ -269,16 +342,29 @@ class AccountTopPage extends StatelessWidget {
                               flex: 1,
                               child: Container(
                                   child: Text('3/11(Fri)',
+                                      style: TextStyle(
+                                        fontFamily: 'NotoSansJP-Medium',
+                                      ),
                                       textAlign: TextAlign.end))),
                           const Padding(padding: EdgeInsets.only(right: 30)),
                           Expanded(
-                              flex: 2, child: Container(child: Text('食費'))),
+                              flex: 2,
+                              child: Container(
+                                  child: Text(
+                                '食費',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
+                              ))),
                           const Padding(padding: EdgeInsets.only(right: 10)),
                           Expanded(
                               flex: 2,
                               child: Container(
                                   child: Text(
                                 '¥2,980',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
                                 textAlign: TextAlign.end,
                               )))
                         ],
@@ -290,16 +376,29 @@ class AccountTopPage extends StatelessWidget {
                               flex: 1,
                               child: Container(
                                   child: Text('3/11(Fri)',
+                                      style: TextStyle(
+                                        fontFamily: 'NotoSansJP-Medium',
+                                      ),
                                       textAlign: TextAlign.end))),
                           const Padding(padding: EdgeInsets.only(right: 30)),
                           Expanded(
-                              flex: 2, child: Container(child: Text('食費'))),
+                              flex: 2,
+                              child: Container(
+                                  child: Text(
+                                '食費',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
+                              ))),
                           const Padding(padding: EdgeInsets.only(right: 10)),
                           Expanded(
                               flex: 2,
                               child: Container(
                                   child: Text(
                                 '¥2,980',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
                                 textAlign: TextAlign.end,
                               )))
                         ],
@@ -311,16 +410,29 @@ class AccountTopPage extends StatelessWidget {
                               flex: 1,
                               child: Container(
                                   child: Text('3/11(Fri)',
+                                      style: TextStyle(
+                                        fontFamily: 'NotoSansJP-Medium',
+                                      ),
                                       textAlign: TextAlign.end))),
                           const Padding(padding: EdgeInsets.only(right: 30)),
                           Expanded(
-                              flex: 2, child: Container(child: Text('食費'))),
+                              flex: 2,
+                              child: Container(
+                                  child: Text(
+                                '食費',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
+                              ))),
                           const Padding(padding: EdgeInsets.only(right: 10)),
                           Expanded(
                               flex: 2,
                               child: Container(
                                   child: Text(
                                 '¥2,980',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
                                 textAlign: TextAlign.end,
                               )))
                         ],
@@ -332,16 +444,29 @@ class AccountTopPage extends StatelessWidget {
                               flex: 1,
                               child: Container(
                                   child: Text('3/11(Fri)',
+                                      style: TextStyle(
+                                        fontFamily: 'NotoSansJP-Medium',
+                                      ),
                                       textAlign: TextAlign.end))),
                           const Padding(padding: EdgeInsets.only(right: 30)),
                           Expanded(
-                              flex: 2, child: Container(child: Text('食費'))),
+                              flex: 2,
+                              child: Container(
+                                  child: Text(
+                                '食費',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
+                              ))),
                           const Padding(padding: EdgeInsets.only(right: 10)),
                           Expanded(
                               flex: 2,
                               child: Container(
                                   child: Text(
                                 '¥2,980',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
                                 textAlign: TextAlign.end,
                               )))
                         ],
@@ -353,16 +478,29 @@ class AccountTopPage extends StatelessWidget {
                               flex: 1,
                               child: Container(
                                   child: Text('3/11(Fri)',
+                                      style: TextStyle(
+                                        fontFamily: 'NotoSansJP-Medium',
+                                      ),
                                       textAlign: TextAlign.end))),
                           const Padding(padding: EdgeInsets.only(right: 30)),
                           Expanded(
-                              flex: 2, child: Container(child: Text('食費'))),
+                              flex: 2,
+                              child: Container(
+                                  child: Text(
+                                '食費',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
+                              ))),
                           const Padding(padding: EdgeInsets.only(right: 10)),
                           Expanded(
                               flex: 2,
                               child: Container(
                                   child: Text(
                                 '¥2,980',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
                                 textAlign: TextAlign.end,
                               )))
                         ],
@@ -374,16 +512,29 @@ class AccountTopPage extends StatelessWidget {
                               flex: 1,
                               child: Container(
                                   child: Text('3/11(Fri)',
+                                      style: TextStyle(
+                                        fontFamily: 'NotoSansJP-Medium',
+                                      ),
                                       textAlign: TextAlign.end))),
                           const Padding(padding: EdgeInsets.only(right: 30)),
                           Expanded(
-                              flex: 2, child: Container(child: Text('食費'))),
+                              flex: 2,
+                              child: Container(
+                                  child: Text(
+                                '食費',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
+                              ))),
                           const Padding(padding: EdgeInsets.only(right: 10)),
                           Expanded(
                               flex: 2,
                               child: Container(
                                   child: Text(
                                 '¥2,980',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
                                 textAlign: TextAlign.end,
                               )))
                         ],
@@ -395,16 +546,29 @@ class AccountTopPage extends StatelessWidget {
                               flex: 1,
                               child: Container(
                                   child: Text('3/11(Fri)',
+                                      style: TextStyle(
+                                        fontFamily: 'NotoSansJP-Medium',
+                                      ),
                                       textAlign: TextAlign.end))),
                           const Padding(padding: EdgeInsets.only(right: 30)),
                           Expanded(
-                              flex: 2, child: Container(child: Text('食費'))),
+                              flex: 2,
+                              child: Container(
+                                  child: Text(
+                                '食費',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
+                              ))),
                           const Padding(padding: EdgeInsets.only(right: 10)),
                           Expanded(
                               flex: 2,
                               child: Container(
                                   child: Text(
                                 '¥2,980',
+                                style: TextStyle(
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
                                 textAlign: TextAlign.end,
                               )))
                         ],

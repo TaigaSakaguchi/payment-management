@@ -130,7 +130,10 @@ class TransferDetailPage extends StatelessWidget {
                               child: Container(
                                   child: Text(
                                 '家賃',
-                                style: TextStyle(color: Colors.white),
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
                               ))),
                           const Padding(padding: EdgeInsets.only(right: 10)),
                           Expanded(
@@ -138,7 +141,10 @@ class TransferDetailPage extends StatelessWidget {
                               child: Container(
                                   child: Text(
                                 '¥4,980',
-                                style: TextStyle(color: Colors.white),
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
                                 textAlign: TextAlign.end,
                               )))
                         ],
@@ -153,7 +159,10 @@ class TransferDetailPage extends StatelessWidget {
                                   child: Container(
                                       child: Text(
                                     '立替差額',
-                                    style: TextStyle(color: Colors.white),
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontFamily: 'NotoSansJP-Medium',
+                                    ),
                                   ))),
                               const Padding(
                                   padding: EdgeInsets.only(right: 10)),
@@ -162,7 +171,10 @@ class TransferDetailPage extends StatelessWidget {
                                   child: Container(
                                       child: Text(
                                     '¥14,980',
-                                    style: TextStyle(color: Colors.white),
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontFamily: 'NotoSansJP-Medium',
+                                    ),
                                     textAlign: TextAlign.end,
                                   )))
                             ],
@@ -170,7 +182,10 @@ class TransferDetailPage extends StatelessWidget {
                           Container(
                             child: Text(
                               '（大河：¥50,000　まり：¥30,000）',
-                              style: TextStyle(color: Colors.white),
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: 'NotoSansJP-Medium',
+                              ),
                             ),
                           ),
                         ],
@@ -178,7 +193,11 @@ class TransferDetailPage extends StatelessWidget {
                       const Padding(padding: EdgeInsets.only(bottom: 15)),
                       Text(
                         '※大河への返済は別途支払い',
-                        style: TextStyle(color: Colors.white, fontSize: 12),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 12,
+                          fontFamily: 'NotoSansJP-Medium',
+                        ),
                       )
                     ],
                   ),

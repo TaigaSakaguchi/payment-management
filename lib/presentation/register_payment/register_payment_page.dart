@@ -30,7 +30,7 @@ class RegisterPaymentForm extends State<RegisterPaymentPage> {
                 title: Text(
                   '立て替え登録',
                   style: TextStyle(
-                    fontFamily: 'Source Han Sans JP',
+                    fontFamily: 'NotoSansJP-Medium',
                     fontSize: 17,
                     color: const Color(0xffffffff),
                     fontWeight: FontWeight.w700,
@@ -79,7 +79,7 @@ class RegisterPaymentForm extends State<RegisterPaymentPage> {
                                     child: Text(
                                       '金額',
                                       style: TextStyle(
-                                        fontFamily: 'Gotham',
+                                        fontFamily: 'NotoSansJP-Medium',
                                         fontSize: 17,
                                         color: const Color(0xff172b4d),
                                         fontWeight: FontWeight.w500,
@@ -135,7 +135,7 @@ class RegisterPaymentForm extends State<RegisterPaymentPage> {
                                     child: Text(
                                       '用途',
                                       style: TextStyle(
-                                        fontFamily: 'Gotham',
+                                        fontFamily: 'NotoSansJP-Medium',
                                         fontSize: 17,
                                         color: const Color(0xff172b4d),
                                         fontWeight: FontWeight.w500,
@@ -185,7 +185,7 @@ class RegisterPaymentForm extends State<RegisterPaymentPage> {
                                       child: Text(
                                         '登録する',
                                         style: TextStyle(
-                                          fontFamily: 'Gotham',
+                                          fontFamily: 'NotoSansJP-Medium',
                                           fontSize: 15,
                                           color: const Color(0xffffffff),
                                           fontWeight: FontWeight.w300,

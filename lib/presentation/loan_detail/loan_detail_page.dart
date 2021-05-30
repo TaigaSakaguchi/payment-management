@@ -167,7 +167,10 @@ class LoanDetailPage extends StatelessWidget {
                               child: Container(
                                   child: Text(
                                 '¥14,980',
-                                style: TextStyle(color: Colors.white),
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'NotoSansJP-Medium',
+                                ),
                                 textAlign: TextAlign.end,
                               )))
                         ],

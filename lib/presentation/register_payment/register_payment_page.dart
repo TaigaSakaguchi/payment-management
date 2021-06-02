@@ -196,7 +196,7 @@ class RegisterPaymentForm extends State<RegisterPaymentPage> {
                                       onPressed: () {
                                         if (!_formKey.currentState.validate())
                                           return;
-                                        registerPaymentModel.register();
+                                        registerPaymentModel.registerPayment();
                                         // .then((value) =>
                                         //     {Navigator.pop(context)})
                                         // .onError(

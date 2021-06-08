@@ -13,7 +13,7 @@ class AccountTopPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<AccountTopModel>(
-        create: (_) => AccountTopModel()..fetchPayments(),
+        create: (_) => AccountTopModel(),
         child: Consumer<AccountTopModel>(builder: (context, model, child) {
           return Scaffold(
             backgroundColor: const Color(0xFFa99bf7),
@@ -71,7 +71,8 @@ class AccountTopPage extends StatelessWidget {
                           child: Column(
                             children: [
                               CircleAvatar(
-                                // backgroundImage: AssetImage('images/pic.jpg'),
+                                backgroundImage: NetworkImage(
+                                    'https://firebasestorage.googleapis.com/v0/b/tatekae-b8188.appspot.com/o/IMG_7700.JPG?alt=media&token=0af3ed7d-5195-487e-b6b0-eda2251ec997'),
                                 radius: 70,
                               ),
                               const Padding(
@@ -107,7 +108,7 @@ class AccountTopPage extends StatelessWidget {
                                     textAlign: TextAlign.left,
                                   ),
                                   Text(
-                                    '5月分',
+                                    '${model.currentDay <= 25 ? model.currentMonth : model.currentMonth + 1}月分',
                                     style: TextStyle(
                                       fontFamily: 'NotoSansJP-Medium',
                                     ),
@@ -116,18 +117,21 @@ class AccountTopPage extends StatelessWidget {
                               ),
                               const Padding(
                                   padding: EdgeInsets.only(right: 130)),
-                              Text(
-                                NumberFormat("¥#,###").format(
-                                    model.calculateTotalPrice(snapshot.data)),
-                                style: TextStyle(
-                                  fontFamily: 'NotoSansJP-Medium',
-                                  fontSize: 24,
-                                  color: const Color(0xff172b4d),
-                                  fontWeight: FontWeight.w600,
+                              SizedBox(
+                                width: 103,
+                                child: Text(
+                                  NumberFormat("¥#,###").format(
+                                      model.calculateTotalPrice(snapshot.data)),
+                                  style: TextStyle(
+                                    fontFamily: 'NotoSansJP-Medium',
+                                    fontSize: 24,
+                                    color: const Color(0xff172b4d),
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                  textHeightBehavior: TextHeightBehavior(
+                                      applyHeightToFirstAscent: false),
+                                  textAlign: TextAlign.right,
                                 ),
-                                textHeightBehavior: TextHeightBehavior(
-                                    applyHeightToFirstAscent: false),
-                                textAlign: TextAlign.left,
                               )
                             ],
                           )),

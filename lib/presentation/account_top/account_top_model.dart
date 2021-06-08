@@ -3,33 +3,35 @@ import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:intl/intl.dart';
 import 'package:tatekae/domain/payment.dart';
 
 class AccountTopModel extends ChangeNotifier {
   Payment payment;
   List<Payment> paymentList;
 
+  int currentYear;
+  int currentMonth;
+  int currentDay;
+
   AccountTopModel() {
     this.payment = Payment(usage: '', price: 0);
-    // this.payment = Payment();
-  }
-
-  Future<void> fetchPayments() async {
-    var payments = await Firestore.instance
-        .collection('payment')
-        .document('202106')
-        .collection('taiga')
-        .getDocuments();
-    print(payments.documents[0].data);
-
-    this.payment.price = payments.documents[0].data['price'];
-    notifyListeners();
+    DateTime currentDateTime = DateTime.now();
+    this.currentYear = currentDateTime.year;
+    this.currentMonth = currentDateTime.month;
+    this.currentDay = currentDateTime.day;
   }
 
   Stream<QuerySnapshot> streamPayments() {
+    int month = this.currentMonth;
+    if (this.currentDay > 25) month++;
+    int year = this.currentYear;
+
+    String paymentDocPath = '$year${new NumberFormat("00").format(month)}';
+
     return Firestore.instance
         .collection('payment')
-        .document('202106')
+        .document(paymentDocPath)
         .collection('taiga')
         .orderBy('createdAt', descending: true)
         .snapshots();

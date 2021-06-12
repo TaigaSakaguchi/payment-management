@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
+import 'package:tatekae/presentation/login/login_page.dart';
 import 'package:tatekae/presentation/register_payment/register_payment_page.dart';
 
 import 'account_top_model.dart';
@@ -64,6 +65,14 @@ class AccountTopPage extends StatelessWidget {
                             ),
                             onPressed: () {
                               // TODO: ログアウト処理
+
+                              // 仮でログイン画面への遷移
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LoginPage(),
+                                    fullscreenDialog: true),
+                              );
                             },
                           )),
                       Positioned(
@@ -156,7 +165,7 @@ class AccountTopPage extends StatelessWidget {
                               textHeightBehavior: TextHeightBehavior(
                                   applyHeightToFirstAscent: false),
                             ),
-                            onPressed: () async {
+                            onPressed: () {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(

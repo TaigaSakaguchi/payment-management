@@ -1,199 +1,162 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:adobe_xd/pinned.dart';
 
-class LoginPage extends StatelessWidget {
-  LoginPage({Key key}) : super(key: key);
+class LoginPage extends StatefulWidget {
+  const LoginPage({Key key}) : super(key: key);
+
+  @override
+  _LoginPageState createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  String _selectedUser = 'taiga'; // `taiga` or `marimo`
+
+  void select(String user) {
+    setState(() {
+      _selectedUser = user;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xffa99bf7),
+      appBar: AppBar(
+        title: Text('ログイン'),
+        backgroundColor: const Color(0xFFa99bf7),
+        elevation: 0,
+      ),
       body: Stack(
+        alignment: Alignment.center,
         children: <Widget>[
-          Pinned.fromPins(
-            Pin(size: 106.0, end: 42.5),
-            Pin(size: 144.0, middle: 0.3623),
-            child: Stack(
-              children: <Widget>[
-                Pinned.fromPins(
-                  Pin(start: 11.5, end: 11.5),
-                  Pin(size: 25.0, end: 0.0),
-                  child: Text(
-                    'Marimo',
-                    style: TextStyle(
-                      fontFamily: 'Gotham',
-                      fontSize: 25,
-                      color: const Color(0xffffffff),
-                      fontWeight: FontWeight.w500,
-                      height: 0.8,
-                    ),
-                    textHeightBehavior:
-                        TextHeightBehavior(applyHeightToFirstAscent: false),
-                    textAlign: TextAlign.left,
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(start: 0.0, end: 0.0),
-                  Pin(start: 0.0, end: 38.0),
-                  child: Stack(
-                    children: <Widget>[
-                      Pinned.fromPins(
-                        Pin(start: -49.9, end: -23.5),
-                        Pin(start: -17.4, end: -145.6),
-                        child:
-                            // Adobe XD layer: 'beautiful-beauty-bl…' (shape)
-                            Container(
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: const AssetImage(''),
-                              fit: BoxFit.fill,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(start: 0.0, end: 0.0),
-                        Pin(start: 0.0, end: 0.0),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(
-                                Radius.elliptical(9999.0, 9999.0)),
-                            color: const Color(0xffffffff),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 106.0, start: 43.5),
-            Pin(size: 145.0, middle: 0.3628),
-            child: Stack(
-              children: <Widget>[
-                Pinned.fromPins(
-                  Pin(size: 60.0, middle: 0.5109),
-                  Pin(size: 25.0, end: 0.0),
-                  child: Text(
-                    'Taiga',
-                    style: TextStyle(
-                      fontFamily: 'Gotham',
-                      fontSize: 25,
-                      color: const Color(0xffffffff),
-                      fontWeight: FontWeight.w500,
-                      height: 0.8,
-                    ),
-                    textHeightBehavior:
-                        TextHeightBehavior(applyHeightToFirstAscent: false),
-                    textAlign: TextAlign.left,
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(start: 0.0, end: 0.0),
-                  Pin(start: 0.0, end: 39.0),
-                  child: Stack(
-                    children: <Widget>[
-                      Pinned.fromPins(
-                        Pin(start: -49.9, end: -23.5),
-                        Pin(start: -17.4, end: -145.6),
-                        child:
-                            // Adobe XD layer: 'beautiful-beauty-bl…' (shape)
-                            Container(
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: const AssetImage(''),
-                              fit: BoxFit.fill,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(start: 0.0, end: 0.0),
-                        Pin(start: 0.0, end: 0.0),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(
-                                Radius.elliptical(9999.0, 9999.0)),
-                            color: const Color(0xffffffff),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 103.0, middle: 0.5),
-            Pin(size: 58.0, start: 95.0),
-            child: Text(
-              'Login',
-              style: TextStyle(
-                fontFamily: 'Source Han Sans JP',
-                fontSize: 40,
-                color: const Color(0xffffffff),
-                height: 0.5,
-              ),
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: false),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 158.0, start: 18.0),
-            Pin(size: 205.0, middle: 0.3493),
+          Positioned(
+            top: 100,
             child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20.0),
-                border: Border.all(width: 2.0, color: const Color(0xffffffff)),
+              child: Row(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      select('taiga');
+                    },
+                    child: Container(
+                      width: 164,
+                      padding:
+                          EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5.0),
+                        border: _selectedUser == 'taiga'
+                            ? Border.all(
+                                width: 2.0, color: const Color(0xffffffff))
+                            : null,
+                      ),
+                      child: Column(
+                        children: [
+                          CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://firebasestorage.googleapis.com/v0/b/tatekae-b8188.appspot.com/o/IMG_7779.JPG?alt=media&token=5d3852f7-3e10-44ed-aeec-948324490e82'),
+                            radius: 70,
+                          ),
+                          const Padding(padding: EdgeInsets.only(bottom: 10)),
+                          Text(
+                            'Taiga',
+                            style: TextStyle(
+                              fontFamily: 'NotoSansJP-Medium',
+                              fontSize: 20,
+                              color: const Color(0xffffffff),
+                              fontWeight: FontWeight.w500,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  const Padding(padding: EdgeInsets.only(left: 50)),
+                  GestureDetector(
+                    onTap: () {
+                      select('marimo');
+                    },
+                    child: Container(
+                      width: 164,
+                      padding:
+                          EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5.0),
+                        // border: Border.all(
+                        //     width: 2.0, color: const Color(0xffffffff)),
+                        border: _selectedUser == 'marimo'
+                            ? Border.all(
+                                width: 2.0, color: const Color(0xffffffff))
+                            : null,
+                      ),
+                      child: Column(
+                        children: [
+                          CircleAvatar(
+                            backgroundImage: NetworkImage(
+                                'https://firebasestorage.googleapis.com/v0/b/tatekae-b8188.appspot.com/o/IMG_7700.JPG?alt=media&token=0af3ed7d-5195-487e-b6b0-eda2251ec997'),
+                            radius: 70,
+                          ),
+                          const Padding(padding: EdgeInsets.only(bottom: 10)),
+                          Text(
+                            'Marimo',
+                            style: TextStyle(
+                              fontFamily: 'NotoSansJP-Medium',
+                              fontSize: 20,
+                              color: const Color(0xffffffff),
+                              fontWeight: FontWeight.w500,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
-          Pinned.fromPins(
-            Pin(size: 197.0, middle: 0.5),
-            Pin(size: 40.0, middle: 0.671),
-            child: Stack(
-              children: <Widget>[
-                Pinned.fromPins(
-                  Pin(start: 0.0, end: 0.0),
-                  Pin(start: 0.0, end: 0.0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(5.0),
-                      color: const Color(0xffffffff),
-                      border: Border.all(
-                          width: 1.0, color: const Color(0xff7764e4)),
-                      boxShadow: [
-                        BoxShadow(
-                          color: const Color(0x1c2c2828),
-                          offset: Offset(0, 3),
-                          blurRadius: 6,
-                        ),
-                      ],
+          Positioned(
+            top: 430,
+            child: Container(
+              width: 230,
+              height: 40,
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(5.0),
+                  border:
+                      Border.all(width: 1.0, color: const Color(0xff7764e4)),
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color(0x1c2c2828),
+                      offset: Offset(0, 3),
+                      blurRadius: 6,
                     ),
-                  ),
+                  ],
                 ),
-                Pinned.fromPins(
-                  Pin(size: 37.0, middle: 0.5),
-                  Pin(size: 15.0, middle: 0.52),
+                child: CupertinoButton(
+                  borderRadius: BorderRadius.all(Radius.circular(5.0)),
+                  padding: EdgeInsets.all(0),
+                  color: const Color(0xffffffff),
                   child: Text(
-                    'Login',
+                    'ログイン',
                     style: TextStyle(
-                      fontFamily: 'Gotham',
+                      fontFamily: 'NotoSansJP-Medium',
                       fontSize: 15,
                       color: const Color(0xff7764e4),
                       fontWeight: FontWeight.w300,
-                      height: 1.3333333333333333,
                     ),
                     textHeightBehavior:
                         TextHeightBehavior(applyHeightToFirstAscent: false),
-                    textAlign: TextAlign.left,
                   ),
+                  onPressed: () {
+                    // TODO: ログイン処理
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(
+                    //       builder: (context) => RegisterPaymentPage(),
+                    //       fullscreenDialog: true),
+                    // );
+                  },
                 ),
-              ],
+              ),
             ),
           ),
         ],
